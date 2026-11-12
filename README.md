@@ -57,4 +57,10 @@ config.)
 `AERIS_PET_DEMO=1` drops crumbs shortly after start; `AERIS_PET_STATS=1` prints frame timing;
 `AERIS_PET=raven` overrides the stored choice for one run.
 
+## Next: pets that visit each other
+
+Plans for pets on different machines meeting over a Tailscale tailnet (visiting, letters to a
+local Ollama model, battery vigils, waves when a friend comes online) are in
+[docs/network-ideas.md](docs/network-ideas.md). Not built yet.
+
 Part of AerisOS.
