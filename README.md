@@ -27,6 +27,7 @@ aeris-pet                    run the pet (one instance; starting it twice does n
 aeris-pet set dragon|raven   choose the pet, starting it if needed
 aeris-pet start | quit | toggle
 aeris-pet status             JSON for a bar module: {"text", "class", "pet", "running"}
+aeris-pet where bar|desktop  live in the top bar (drawn by Quickshell) or on the desktop overlay
 ```
 
 The choice is stored in `~/.local/state/aeris-pet/pet`. Speech lines come from
@@ -50,7 +51,9 @@ config.)
 ### Bar menu
 
 - **Waybar:** `integrations/waybar/` has a `custom/pet` module and a dropdown menu (Waybar 0.11+).
-- **Quickshell:** `integrations/quickshell/` has a paw icon and popup for a Quickshell bar.
+- **Quickshell:** `integrations/quickshell/` has a paw icon and popup for a Quickshell bar, and
+  `PetLane.qml`, the pet living inside the bar itself (`aeris-pet where bar`). `pet.qml` runs
+  just the bar pet on its own, for machines whose bar is Waybar.
 
 ## Test hooks
 
