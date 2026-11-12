@@ -1,0 +1,12 @@
+// Add "custom/pet" to one of your modules-* lists, then this module definition.
+// Copy pet-menu.xml next to your Waybar config. aeris-pet sends SIGRTMIN+11 when it starts or stops.
+"custom/pet": {
+  "exec": "~/.local/bin/aeris-pet status", "return-type": "json", "interval": 60, "signal": 11,
+  "menu": "on-click", "menu-file": "~/.config/waybar/pet-menu.xml",
+  "menu-actions": {
+    "dragon": "~/.local/bin/aeris-pet set dragon",
+    "raven":  "~/.local/bin/aeris-pet set raven",
+    "toggle": "~/.local/bin/aeris-pet toggle"
+  }
+}
+// style.css:  #custom-pet.off { color: #5a5a5a; }

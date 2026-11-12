@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pet menu for the Waybar custom/pet module (ids map to menu-actions in config.jsonc) -->
+<interface>
+  <object class="GtkMenu" id="menu">
+    <child><object class="GtkMenuItem" id="dragon"><property name="label">Dragon</property></object></child>
+    <child><object class="GtkMenuItem" id="raven"><property name="label">Raven</property></object></child>
+    <child><object class="GtkSeparatorMenuItem" id="sep"/></child>
+    <child><object class="GtkMenuItem" id="toggle"><property name="label">Show / Quit</property></object></child>
+  </object>
+</interface>
